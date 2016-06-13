@@ -1,0 +1,33 @@
+/* 
+  SJFramework-Prefix.pch
+  SJFramework
+
+  Created by Hkzr on 15/4/28.
+  Copyright (c) 2015年 Hkzr. All rights reserved.
+*/
+
+
+
+#import <Availability.h>
+
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//分享/微信支付/支付宝支付/友盟/极光 的开启及关闭宏定义在此文件中
+#import "QUDefines.h"
+
+extern int kLogShowBusinessReq; //显示业务参数请求log，搜索此变量，找到位置，设置：0关闭､1打开
+extern int kLogShowTotalReq;    //显示完整请求log，搜索此变量，找到位置，设置：0关闭､1打开
+
+#import "Masonry.h"
+#import "MJExtension.h"
+#import "UIView+Layout.h"
+#import "UIView+Frame.h"
+
+#endif
