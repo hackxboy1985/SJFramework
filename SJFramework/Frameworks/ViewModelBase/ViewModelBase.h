@@ -10,11 +10,6 @@
 
 #define IP @"http://192.168.4.52:8085"
 
-//#define IP @"http://192.168.5.43:8081"
-//#define IP @"http://192.168.4.67:8085"
-//#define IP @"http://192.168.1.99:8081"
-//#define IP @"http://local.health.mysql.yunhrp.com:8084"
-
 
 /**
  * @brief 业务回调

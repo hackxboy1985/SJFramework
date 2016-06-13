@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "AppBusinessApi.h"
-#import "IAppImBusiness.h"
 #import "ViewModelManagerBase.h"
 #import "Log.h"
 
@@ -22,6 +21,7 @@
     NSString * _wxAppName;//app名称,微信初始化时使用
     NSString * _wxAppkey;//app唯一标识
     NSString * _wxAppSecret;//app secret
+    
     //以下3个参数主要用于支付
     NSString * _wxMchId;//商户号
     NSString * _wxPartnerID;//商户API密钥,支付使用，在微信商户平台网站上设置的API密钥

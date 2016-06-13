@@ -73,7 +73,7 @@ NSString *notify_url = NOTIFY_IP@"/AliPaymentNotify.html"; // 8066
     //以下大括号中，可根据实际情况配置使用, 另外请参考QUDefines.h头文件中的几个宏定义，注释相关宏，则不会编译相关代码
     {
         //设置微信参数
-        [self setWeixinParamWithName:@"惠" appkey:WX_APP_ID secret:WX_APP_SECRET mchId:WX_MCH_ID partnerId:WX_PARTNER_ID notifyUrl:WX_NOTIFY_URL];
+        [self setWeixinParamWithName:@"y惠" appkey:WX_APP_ID secret:WX_APP_SECRET mchId:WX_MCH_ID partnerId:WX_PARTNER_ID notifyUrl:WX_NOTIFY_URL];
         
         //设置支付宝参数
         [self setAliPayParamWithPartner:partner seller:seller privateKey:privateKey notifyUrl:notify_url appScheme:@"huiAli"];

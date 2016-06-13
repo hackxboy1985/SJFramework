@@ -17,7 +17,14 @@
 
 @interface BaseViewController : UIViewController
 
+/**
+ * @brief 新增回调block，支持3个参数
+ */
+@property (nonatomic, copy) void(^callbackBlock)(id param1,id param2,id param3);
+
+
 @property (nonatomic, assign) CGRect currViewRect;
+
 @property (nonatomic,strong)UIButton* rightButton;
 
 - (void)initNavBarRightBtnWithNormalImage:(NSString *)normalImage highlightedImage:(NSString *)highlightedImage target:(id)target action:(SEL)action;
