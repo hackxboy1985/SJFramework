@@ -15,6 +15,7 @@
 #import "SSKeychain.h"
 #import "NSString+ZRExt.h"
 
+#import "NSMutableArray+WeakReferences.h"
 
 
 static NSMutableDictionary* cbDictionary;
@@ -49,7 +50,7 @@ static NSMutableDictionary* businessCbDictionary;
             businessCbDictionary = [[NSMutableDictionary alloc] init];
         });
         
-        _uiListenerArray = [[NSMutableArray alloc] init];
+        _uiListenerArray = [NSMutableArray noRetainingArray];
     }
     
     return self;
@@ -114,7 +115,7 @@ static NSMutableDictionary* businessCbDictionary;
 {
     NSString* key = [self productIdentKey:ident withUrl:url];
     HttpRequestCB cb = [cbDictionary objectForKey:key];
-    [cbDictionary removeObjectForKey:ident];
+    [cbDictionary removeObjectForKey:key];
     return cb;
 }
 
@@ -140,7 +141,7 @@ static NSMutableDictionary* businessCbDictionary;
 {
     NSString* key = [self productIdentKey:ident withUrl:url];
     BusinessCallback cb = [businessCbDictionary objectForKey:key];
-    [businessCbDictionary removeObjectForKey:ident];
+    [businessCbDictionary removeObjectForKey:key];
     return cb;
 }
 

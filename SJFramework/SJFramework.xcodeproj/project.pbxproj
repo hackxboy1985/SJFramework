@@ -545,6 +545,8 @@
 		0213068F1CFFD30100D1EDFF /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0213068E1CFFD30100D1EDFF /* libicucore.tbd */; };
 		021306911CFFD31500D1EDFF /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 021306901CFFD31500D1EDFF /* libz.1.2.5.tbd */; };
 		021306931CFFD33600D1EDFF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 021306921CFFD33600D1EDFF /* CoreTelephony.framework */; };
+		0264D4871D1E36FE00E09638 /* NSMutableArray+WeakReferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 0264D4851D1E36FE00E09638 /* NSMutableArray+WeakReferences.h */; };
+		0264D4881D1E36FF00E09638 /* NSMutableArray+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 0264D4861D1E36FE00E09638 /* NSMutableArray+WeakReferences.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1091,6 +1093,8 @@
 		0213068E1CFFD30100D1EDFF /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		021306901CFFD31500D1EDFF /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		021306921CFFD33600D1EDFF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0264D4851D1E36FE00E09638 /* NSMutableArray+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WeakReferences.h"; sourceTree = "<group>"; };
+		0264D4861D1E36FE00E09638 /* NSMutableArray+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WeakReferences.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1204,6 +1208,8 @@
 		021302281CFFC69700D1EDFF /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				0264D4851D1E36FE00E09638 /* NSMutableArray+WeakReferences.h */,
+				0264D4861D1E36FE00E09638 /* NSMutableArray+WeakReferences.m */,
 				021302461CFFC69700D1EDFF /* NSArray+Log.h */,
 				021302471CFFC69700D1EDFF /* NSArray+Log.m */,
 				021302481CFFC69700D1EDFF /* NSData+ZRExt.h */,
@@ -2403,6 +2409,7 @@
 				021304DF1CFFC69700D1EDFF /* NSDataEx.h in Headers */,
 				0213056E1CFFC69700D1EDFF /* MJRefresh.h in Headers */,
 				0213058D1CFFC69700D1EDFF /* e_os2.h in Headers */,
+				0264D4871D1E36FE00E09638 /* NSMutableArray+WeakReferences.h in Headers */,
 				021306361CFFC69800D1EDFF /* UIProgressView+AFNetworking.h in Headers */,
 				021304C31CFFC69700D1EDFF /* AFNetworking.h in Headers */,
 				0213049E1CFFC69700D1EDFF /* QURegex.h in Headers */,
@@ -2673,6 +2680,7 @@
 				021304781CFFC69700D1EDFF /* NSDate+Category.m in Sources */,
 				021304BA1CFFC69700D1EDFF /* WebViewController.m in Sources */,
 				021306301CFFC69800D1EDFF /* UIAlertView+AFNetworking.m in Sources */,
+				0264D4881D1E36FF00E09638 /* NSMutableArray+WeakReferences.m in Sources */,
 				021304DE1CFFC69700D1EDFF /* MD5DataSigner.m in Sources */,
 				021304A31CFFC69700D1EDFF /* TimeMonitor.m in Sources */,
 				021304B21CFFC69700D1EDFF /* NSDictionary+ZRExt.m in Sources */,
